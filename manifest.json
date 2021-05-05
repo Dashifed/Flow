@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Flow",
+    "description": "The extension that lets you write without distractions",
+    "version": "1.0",
+    "permissions": ["storage"],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

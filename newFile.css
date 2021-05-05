@@ -1,0 +1,101 @@
+html{
+    min-height: 500px;
+    min-width: 300px;
+}
+body{
+    font-style: normal;
+    font-weight: 700;
+}
+html, body{
+    overflow: auto;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    background: white;
+}
+.header, .main-container, .note-box{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+}
+.header{
+    height: 64px;
+    position: static;
+    align-items: row;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 82vh;
+}
+.button-user{
+    width: 32px;
+    height: 0;
+}
+.button-user:hover{
+    -webkit-animation: bounce .2s infinite alternate;
+    -moz-animation: bounce .2s infinite alternate;
+    animation: bounce .2s infinite alternate;
+    -webkit-animation-iteration-count: 2;
+    -moz-animation-iteration-count: 2;
+    animation-iteration-count: 2;
+}
+@-webkit-keyframes bounce {
+    to { -webkit-transform: scale(1.2); }
+  }
+  @-moz-keyframes bounce {
+    to { -moz-transform: scale(1.2); }
+  }
+  @keyframes bounce {
+    to { transform: scale(1.2); }
+  }
+.icon{
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 5vw;
+    margin-top: 10px;
+}
+.icon i{
+    font-size: 32px;
+    line-height: 32px;
+}
+.icon{
+    color: black;
+}
+.newfile-name{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    height: 100%;
+}
+.file-name{
+    width: 60vw;
+    outline: none;
+    border: none;
+    height: 32px;
+    font-size: 16px;
+    background: unset;
+    border-bottom: 1px solid black;
+}
+.note-box{
+    padding: 10px;
+    margin: none;
+    width: 90vw;
+    height: 80vh;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 600;
+    overflow: auto;
+    resize: none;
+    background: #eee;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
